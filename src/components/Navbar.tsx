@@ -15,17 +15,20 @@ const Navbar = () => {
       </div>
 
       {/* NAVIGATION LINKS */}
-      <nav className="hidden md:flex gap-6 space-x-4 text-2xl">
-        <Link to="/community" className="mr-4 hover:text-gray-400">
+      <nav className="hidden md:flex gap-4 space-x-5 text-2xl">
+        <Link to="/about" className="navLink">
+          About Us
+        </Link>
+        <Link to="/community" className="navLink">
           Our Community
         </Link>
-        <Link to="/projects" className="mr-4 hover:text-gray-400">
+        <Link to="/projects" className="navLink">
           Projects
         </Link>
-        <Link to="/events" className="hover:text-gray-400">
+        <Link to="/events" className="navLink">
           Events
         </Link>
-        <Link to="/contact" className="hover:text-gray-400">
+        <Link to="/contact" className="navLink">
           Get Involved
         </Link>
       </nav>
@@ -47,6 +50,9 @@ const Navbar = () => {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             className="absolute top-0 left-0 w-full h-screen bg-emerald-900 px-10 py-6 md:hidden text-white flex flex-col items-start justify-center gap-6 text-5xl z-20"
           >
+            <Link to="/about" className="block mb-2 hover:text-gray-400">
+              About Us
+            </Link>
             <Link to="/community" className="block mb-2 hover:text-gray-400">
               Our Community
             </Link>
