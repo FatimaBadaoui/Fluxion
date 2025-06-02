@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div className="px-10 py-6 flex items-center justify-between bg-[#058807] p-4 text-white">
+    <div className="sticky top-0 px-10 py-6 flex items-center justify-between bg-emerald-900 p-4 text-white">
       {/* LOGO */}
       <div className="text-2xl font-bold z-50">
         <Link to="/">FLUXION</Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "-100%", opacity: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="absolute top-0 left-0 w-full h-screen bg-[#058807] px-10 py-6 md:hidden text-white flex flex-col items-start justify-center gap-6 text-5xl"
+            className="absolute top-0 left-0 w-full h-screen bg-emerald-900 px-10 py-6 md:hidden text-white flex flex-col items-start justify-center gap-6 text-5xl z-20"
           >
             <Link to="/community" className="block mb-2 hover:text-gray-400">
               Our Community
