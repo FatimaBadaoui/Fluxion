@@ -6,6 +6,11 @@
   color: white;
 }
 
+body {
+  background-color: #e4e4e4; /* Dark background */
+  font-family: 'Inter', sans-serif;
+}
+
 .navLink {
   position: relative;
 }

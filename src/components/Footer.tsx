@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <div className="h-screen bg-emerald-950 pt-20">
       {/* CONTACT US */}
-      <div className="flex flex-col gap-16 md:flex-row items-start justify-between px-20 py-10 md:py-20">
+      <div className="flex flex-col gap-16 md:flex-row items-center md:items-start justify-between px-20 py-10 md:py-20">
         <h2 className="text-5xl font-bold max-w-[300px]">Ways to contact us</h2>
-        <div className="flex gap-16">
+        <div className="flex justify-end gap-20 w-full pr-20">
           <div className="flex flex-col gap-5">
             <h3 className="text-xl font-bold">Socials</h3>
             <div>
@@ -79,6 +79,25 @@ const Footer = () => {
 
       <hr />
       {/* NEWSLETTER */}
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 text-white px-20 pt-8 md:pt-15">
+        <h2 className="text-2xl font-bold">Sign up for our Newsletter</h2>
+        <form
+          action=""
+          className="flex flex-col items-center gap-3 w-full max-w-md"
+        >
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="p-2 rounded-md w-full max-w-md outline-1 outline-white focus:outline-emerald-700 transition-all"
+          />
+          <button
+            type="submit"
+            className="bg-emerald-700 cursor-pointer w-full text-white px-4 py-2 rounded-md hover:bg-emerald-800 transition-colors mt-3"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
