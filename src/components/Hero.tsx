@@ -32,7 +32,7 @@ const Hero = () => {
         className="text-6xl md:text-8xl font-bold text-gray-800 max-w-4xl leading-tight"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut", delay: 2 }}
       >
         Turning
         {/* <span className="text-green-600">sustainability</span> knowledge into action */}
@@ -42,7 +42,7 @@ const Hero = () => {
         className="text-6xl md:text-8xl font-bold text-green-600 max-w-4xl leading-tight"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 2.5 }}
       >
         sustainability
       </motion.p>
@@ -56,7 +56,7 @@ const Hero = () => {
           visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 1, ease: "easeOut", delay: 1 },
+            transition: { duration: 1, ease: "easeOut", delay: 3 },
           },
         }}
       >
@@ -66,7 +66,7 @@ const Hero = () => {
         className="text-6xl md:text-8xl font-bold text-gray-800 max-w-4xl leading-tight"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 1.5 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 3.5 }}
       >
         into action
       </motion.p>
