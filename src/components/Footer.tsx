@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <div className="h-screen bg-emerald-950 pt-20">
       {/* CONTACT US */}
-      <div className="flex flex-col gap-16 md:flex-row items-center md:items-start justify-between px-20 py-10 md:py-20">
+      <div className="flex flex-col gap-16 md:flex-row items-center md:items-start justify-between px-15 md:px-20 py-10 md:py-20">
         <h2 className="text-5xl font-bold max-w-[300px]">Ways to contact us</h2>
-        <div className="flex justify-end gap-20 w-full pr-20">
+        <div className="flex gap-8 md:justify-end  md:gap-20 w-full md:pr-20">
           <div className="flex flex-col gap-5">
             <h3 className="text-xl font-bold">Socials</h3>
             <div>
